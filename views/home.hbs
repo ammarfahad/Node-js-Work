@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    {{!-- Including the header --}}
+    {{> header}}
+
+<body>
+    <h1>{{Wow}}</h1>
+    
+    {{!-- In this way we can pass the arguments in the helper --}}
+    {{!-- upSize is the helper --}}
+    {{!-- someText is the argument --}}
+    <p>{{upSize someText}}</p>               
+              
+    {{!-- including the footer --}}
+    {{> footer}}
+ </body>
+</html>
