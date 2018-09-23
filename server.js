@@ -1,6 +1,6 @@
 const express = require('express');
 var app = express();
-
+const port = process.env.PORT || 3000; // if the process.env does not exist, we will set the port to 3000
 const hbs = require("hbs");
 
 // req => request
@@ -59,6 +59,6 @@ app.get('/bad', (req,res) => {
 });
 
 // localhost port# 3000
-app.listen(3000, () => {
-    console.log("The Server Stared!!");
+app.listen(port, () => {
+    console.log(`The Server Stared!! ${port}`);
 });
